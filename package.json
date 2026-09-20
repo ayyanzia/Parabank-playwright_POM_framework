@@ -1,0 +1,31 @@
+{
+  "name": "parabank-playwright-automation",
+  "version": "2.0.0",
+  "description": "ParaBank Playwright automation — 60 tests, single-session per module, HTML report output.",
+  "type": "commonjs",
+  "scripts": {
+    "test":                    "playwright test",
+    "test:headed":             "playwright test --headed",
+    "test:registration":       "playwright test tests/registration.spec.js",
+    "test:login":              "playwright test tests/login.spec.js",
+    "test:navigation":         "playwright test tests/navigation.spec.js",
+    "test:accounts-overview":  "playwright test tests/accounts-overview.spec.js",
+    "test:open-account":       "playwright test tests/open-account.spec.js",
+    "test:transfer-funds":     "playwright test tests/transfer-funds.spec.js",
+    "test:bill-pay":           "playwright test tests/bill-pay.spec.js",
+    "test:find-transactions":  "playwright test tests/find-transactions.spec.js",
+    "test:update-contact":     "playwright test tests/update-contact.spec.js",
+    "test:request-loan":       "playwright test tests/request-loan.spec.js",
+    "test:session":            "playwright test tests/session.spec.js",
+    "test:security":           "playwright test tests/security.spec.js",
+    "test:ui-usability":       "playwright test tests/ui-usability.spec.js",
+    "test:report":             "playwright show-report test-results/html-report",
+    "report:md":               "node reporting/generate-report.js",
+    "report:html":             "node reporting/generate-html-report.js"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "@playwright/test": "^1.61.1",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -276,6 +276,7 @@ git push -u origin main
 ---
 
 ## 👨‍💻 Author & Maintenance
+- **Prepared by**: Ayyan Zia
 - **Domain**: ParaBank Banking Automation
 - **Framework**: Playwright / JavaScript (ES6+ / CommonJS)
 - **Design Pattern**: Page Object Model (POM)
